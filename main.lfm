@@ -1,0 +1,108 @@
+object Form1: TForm1
+  Left = 1165
+  Height = 229
+  Top = 37
+  Width = 250
+  Anchors = []
+  BorderStyle = bsSingle
+  Caption = 'BaseConvert'
+  ClientHeight = 229
+  ClientWidth = 250
+  OnCreate = FormCreate
+  Position = poDefault
+  LCLVersion = '3.6.0.0'
+  object EditBin: TLabeledEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 8
+    Height = 28
+    Top = 192
+    Width = 234
+    Anchors = [akTop, akLeft, akRight]
+    AutoSelect = False
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 8
+    EditLabel.Height = 16
+    EditLabel.Width = 234
+    EditLabel.Caption = 'Binary'
+    TabOrder = 3
+    OnChange = EditBinChange
+    OnEnter = EditBinEnter
+  end
+  object EditDec: TLabeledEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 28
+    Top = 24
+    Width = 234
+    Anchors = [akLeft, akRight]
+    AutoSelect = False
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    EditLabel.Height = 16
+    EditLabel.Width = 234
+    EditLabel.Caption = 'Decimal'
+    TabOrder = 0
+    OnChange = EditDecChange
+    OnEnter = EditDecEnter
+  end
+  object EditHex: TLabeledEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 28
+    Top = 80
+    Width = 234
+    Anchors = [akTop, akLeft, akRight]
+    AutoSelect = False
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    EditLabel.Height = 16
+    EditLabel.Width = 234
+    EditLabel.Caption = 'Hexadecimal'
+    TabOrder = 1
+    OnChange = EditHexChange
+    OnEnter = EditHexEnter
+  end
+  object EditOct: TLabeledEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 28
+    Top = 136
+    Width = 234
+    Anchors = [akTop, akLeft, akRight]
+    AutoSelect = False
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    EditLabel.Height = 16
+    EditLabel.Width = 234
+    EditLabel.Caption = 'Octal'
+    TabOrder = 2
+    OnChange = EditOctChange
+    OnEnter = EditOctEnter
+  end
+  object BitsLabel: TLabel
+    AnchorSideTop.Control = EditOct
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 209
+    Height = 16
+    Top = 173
+    Width = 33
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 9
+    BorderSpacing.Right = 8
+    Caption = '0 bits'
+  end
+end
