@@ -83,8 +83,8 @@ begin
     C := Upcase(S[i]);
     Result := Result and
              (
-               ((Ord(C) >= Ord('0')) or (Ord(C) <= Ord('7'))) or
-               ((Ord(C) >= Ord('A')) or (Ord(C) <= Ord('F')))
+               ((Ord(C) >= Ord('0')) and (Ord(C) <= Ord('9'))) or
+               ((Ord(C) >= Ord('A')) and (Ord(C) <= Ord('F')))
              );
   end;
 end;
