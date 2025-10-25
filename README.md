@@ -15,7 +15,7 @@ Features
 
 Constraints
 -----------
-BaseConvert only handles unsigned integer coversions with the following sie limits:
+BaseConvert only handles unsigned integer coversions with the following size limits:
 - maximal 19 decimal digits
 - maximal 16 hexadecimal digits
 - maximal 21 octal digits
